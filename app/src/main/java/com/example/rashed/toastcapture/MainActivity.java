@@ -13,7 +13,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         Log.v("MainActivity","exiting");
-        finish();
+    }
+
+    public void generate(View v){
+        Toast.makeText(this,"online",Toast.LENGTH_SHORT).show();
     }
 }
